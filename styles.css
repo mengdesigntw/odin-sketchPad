@@ -1,0 +1,87 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.6px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    min-height: 40px;
+}
+
+button:disabled {
+    opacity: 0.3;
+}
+
+.input {
+    max-width: 960px;
+    margin: 2rem auto;
+    margin-top: 4rem;
+}
+
+.dimension-input {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+input {
+    min-width: 40%;
+    font-size: 1rem;
+    padding: 0.75rem;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+.input-wrapper button {
+    background-color: rgb(109, 19, 193);
+    color: white;
+}
+
+.helper {
+    color: rgb(203, 9, 9);
+    display: none;
+}
+
+.container {
+  width: 960px;
+  height: 960px;
+  margin: 0 auto;
+  border: 1px solid rgb(73, 73, 73);
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1 1 0;
+  display: flex;
+}
+
+.row div {
+  flex: 1 1 0;
+  border: 1px solid rgb(224, 224, 224);
+  background-color: white;
+  transition: background-color 1.2s ease;
+}
+
+.row div:hover {
+    transition: background-color 0s;
+}
